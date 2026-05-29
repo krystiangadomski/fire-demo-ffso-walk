@@ -194,13 +194,13 @@ export function Demo() {
       {/* ---------- 1. HERO (0–100vh) ---------- */}
       <section className="relative flex h-screen flex-col justify-end pb-28">
         <div className="relative w-full max-w-3xl pl-10 pr-8 md:pl-16 lg:pl-20">
-          <div className="mb-6 text-[0.65rem] uppercase tracking-[0.5em] text-black/70">
+          <div className="mb-6 text-[0.65rem] uppercase tracking-[0.5em] text-white/70">
             {SPRINT.label}
           </div>
-          <h1 className="mb-8 whitespace-pre-line text-5xl font-bold leading-[1.05] text-black md:text-7xl lg:text-8xl">
+          <h1 className="mb-8 whitespace-pre-line text-5xl font-bold leading-[1.05] md:text-7xl lg:text-8xl">
             {SPRINT.headline}
           </h1>
-          <p className="mb-12 max-w-xl text-lg leading-relaxed text-black/80 md:text-xl">
+          <p className="mb-12 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
             {SPRINT.lede}
           </p>
           <div className="flex flex-wrap items-center gap-4">
@@ -218,13 +218,13 @@ export function Demo() {
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-7xl px-8">
           <div className="mb-14 max-w-2xl">
-            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-black/60">
+            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
               01 · Delivered
             </div>
-            <h2 className="text-4xl font-semibold leading-tight text-black md:text-5xl">
+            <h2 className="text-4xl font-semibold leading-tight md:text-5xl">
               What we shipped
             </h2>
-            <p className="mt-4 text-black/70">
+            <p className="mt-4 text-white/70">
               11 user stories across 4 tracks — mobile privacy compliance, platform identity, schedule engine reliability, and tooling. 185% of capacity delivered.
             </p>
           </div>
@@ -240,10 +240,10 @@ export function Demo() {
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-5xl px-8">
           <div className="mb-14 text-center">
-            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-black/60">
+            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
               02 · Learned
             </div>
-            <h2 className="text-4xl font-semibold text-black md:text-5xl">Key takeaways</h2>
+            <h2 className="text-4xl font-semibold md:text-5xl">Key takeaways</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {TAKEAWAYS.map((t, i) => (
@@ -262,10 +262,10 @@ export function Demo() {
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-4xl px-8">
           <div className="mb-12 text-center">
-            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-black/60">
+            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
               03 · Numbers
             </div>
-            <h2 className="text-4xl font-semibold text-black md:text-5xl">By the numbers</h2>
+            <h2 className="text-4xl font-semibold md:text-5xl">By the numbers</h2>
           </div>
 
           <div className="glass rounded-2xl p-8 md:p-10">
