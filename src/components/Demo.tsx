@@ -8,10 +8,10 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const SPRINT = {
   label: 'Sprint Review · 2026 W21–W22',
-  headline: 'REPLACE ME\nwith the sprint headline',
+  headline: 'Mobile. Schedules.\nAI at the limit.',
   lede:
-    'REPLACE ME with a one-paragraph summary of what this sprint shipped, ' +
-    'why it matters, and who benefits. Keep it short and punchy.',
+    'Privacy compliance shipped, two schedule engine bugs squashed, and FFSO Mobile rebranded across every environment — ' +
+    'all while the team set a new record burning a month of Copilot tokens in under three days.',
 };
 
 type TaskTag = 'EXTRA' | 'SPIKE' | 'PoC' | 'BUG' | 'ACTIVE';
@@ -194,13 +194,13 @@ export function Demo() {
       {/* ---------- 1. HERO (0–100vh) ---------- */}
       <section className="relative flex h-screen flex-col justify-end pb-28">
         <div className="relative w-full max-w-3xl pl-10 pr-8 md:pl-16 lg:pl-20">
-          <div className="mb-6 text-[0.65rem] uppercase tracking-[0.5em] text-white/70">
+          <div className="mb-6 text-[0.65rem] uppercase tracking-[0.5em] text-black/70">
             {SPRINT.label}
           </div>
-          <h1 className="mb-8 whitespace-pre-line text-5xl font-bold leading-[1.05] md:text-7xl lg:text-8xl">
+          <h1 className="mb-8 whitespace-pre-line text-5xl font-bold leading-[1.05] text-black md:text-7xl lg:text-8xl">
             {SPRINT.headline}
           </h1>
-          <p className="mb-12 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
+          <p className="mb-12 max-w-xl text-lg leading-relaxed text-black/80 md:text-xl">
             {SPRINT.lede}
           </p>
           <div className="flex flex-wrap items-center gap-4">
