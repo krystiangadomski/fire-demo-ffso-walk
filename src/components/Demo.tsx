@@ -193,7 +193,7 @@ export function Demo() {
     <div className="relative z-10" style={{ height: '500vh' }}>
       {/* ---------- 1. HERO (0–100vh) ---------- */}
       <section className="relative flex h-screen flex-col justify-end pb-28">
-        <div className="relative w-full max-w-3xl pl-10 pr-8 md:pl-16 lg:pl-20">
+        <div className="glass-strong relative w-full max-w-3xl rounded-2xl px-10 py-10 md:px-16 lg:px-20">
           <div className="mb-6 text-[0.65rem] uppercase tracking-[0.5em] text-white/70">
             {SPRINT.label}
           </div>
@@ -217,7 +217,7 @@ export function Demo() {
       {/* ---------- 2. FEATURE COLUMNS (100–200vh) ---------- */}
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-7xl px-8">
-          <div className="mb-14 max-w-2xl">
+          <div className="glass-strong mb-14 max-w-2xl rounded-2xl p-8">
             <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
               01 · Delivered
             </div>
@@ -239,7 +239,7 @@ export function Demo() {
       {/* ---------- 3. TAKEAWAYS (200–300vh) ---------- */}
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-5xl px-8">
-          <div className="mb-14 text-center">
+          <div className="glass-strong mb-14 rounded-2xl p-8 text-center">
             <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
               02 · Learned
             </div>
@@ -261,7 +261,7 @@ export function Demo() {
       {/* ---------- 4. SP SUMMARY (300–400vh) ---------- */}
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-4xl px-8">
-          <div className="mb-12 text-center">
+          <div className="glass-strong mb-12 rounded-2xl p-8 text-center">
             <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
               03 · Numbers
             </div>
@@ -335,7 +335,7 @@ export function Demo() {
 
       {/* ---------- 5. THANKS / CTA (400–500vh) ---------- */}
       <section className="relative flex min-h-screen items-center justify-center">
-        <div className="px-8 text-center">
+        <div className="glass-strong rounded-2xl px-14 py-12 text-center">
           <div className="mb-6 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
             End of demo
           </div>
