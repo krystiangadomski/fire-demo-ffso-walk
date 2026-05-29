@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollToPlugin);
 // ---------- PLACEHOLDER DATA — replace with real sprint content ----------
 
 const SPRINT = {
-  label: 'Sprint Review · 2026 W17–W18',
+  label: 'Sprint Review · 2026 W21–W22',
   headline: 'REPLACE ME\nwith the sprint headline',
   lede:
     'REPLACE ME with a one-paragraph summary of what this sprint shipped, ' +
@@ -36,67 +36,65 @@ interface Workstream {
 const WORKSTREAMS: Workstream[] = [
   {
     id: 'ws-1',
-    title: 'REPLACE: Workstream A',
+    title: 'Mobile — Privacy & Compliance',
     icon: '◆',
-    sp: '?',
+    sp: '8',
     accent: '#6b7fc4',
     tasks: [
-      { desc: 'REPLACE: task description', tags: ['EXTRA'], state: 'review', sp: '?' },
-      { desc: 'REPLACE: task description', tags: ['EXTRA'], state: 'review', sp: '?' },
-      { desc: 'REPLACE: task description', tags: [], state: 'review', sp: '?' },
+      { desc: '#389493 · Mobile App – Privacy Policy & Terms of Use', tags: [], state: 'closed', sp: '5' },
+      { desc: '#393708 · Verify Login App, Mobile API & Mobile App compliance with Privacy Policy', tags: [], state: 'closed', sp: '3' },
+      { desc: '#393537 · Google Play Store Verification Process – Review', tags: ['EXTRA'], state: 'review', sp: '0' },
     ],
   },
   {
     id: 'ws-2',
-    title: 'REPLACE: Workstream B',
+    title: 'Mobile — Platform & Identity',
     icon: '◇',
-    sp: '?',
+    sp: '11',
     accent: '#4dd0e1',
     tasks: [
-      { desc: 'REPLACE: task description', tags: ['SPIKE'], state: 'review', sp: '?' },
-      { desc: 'REPLACE: task description', tags: ['PoC', 'ACTIVE'], state: 'active', sp: '?' },
-      { desc: 'REPLACE: task description', tags: [], state: 'review', sp: '?' },
+      { desc: '#394328 · Rename app to FFSO Mobile for every environment (TEST, PILOT, PROD)', tags: [], state: 'closed', sp: '3' },
+      { desc: '#394349 · Google verification account sees all tasks as read-only in mobile app', tags: ['BUG'], state: 'closed', sp: '3' },
+      { desc: '#392982 · Image Storage Architecture Proposition', tags: ['SPIKE'], state: 'review', sp: '5' },
     ],
   },
   {
     id: 'ws-3',
-    title: 'REPLACE: Workstream C',
+    title: 'Schedule Engine',
     icon: '▲',
-    sp: '?',
+    sp: '6',
     accent: '#c4706a',
     tasks: [
-      { desc: 'REPLACE: task description', tags: ['EXTRA'], state: 'review', sp: '?' },
-      { desc: 'REPLACE: task description', tags: ['BUG'], state: 'closed', sp: '?' },
-      { desc: 'REPLACE: task description', tags: [], state: 'review', sp: '?' },
+      { desc: '#393696 · Suppressor validation incorrectly rejects weekly/monthly suppressing daily schedule', tags: ['BUG'], state: 'closed', sp: '2' },
+      { desc: '#393697 · Simulator shows wrong nextScheduleDateTime when monthly schedule suppressed by 4-monthly', tags: ['BUG'], state: 'closed', sp: '2' },
+      { desc: '#393745 · Change suppression icon for a schedule that is suppressed – First Implementation', tags: [], state: 'closed', sp: '2' },
     ],
   },
   {
     id: 'ws-4',
-    title: 'REPLACE: Workstream D',
+    title: 'Platform / Tooling',
     icon: '●',
-    sp: '?',
+    sp: '12',
     accent: '#b39ddb',
     tasks: [
-      { desc: 'REPLACE: task description', tags: ['EXTRA'], state: 'review', sp: '?' },
-      { desc: 'REPLACE: task description', tags: [], state: 'review', sp: '?' },
-      { desc: 'REPLACE: task description', tags: ['EXTRA'], state: 'review', sp: '?' },
+      { desc: '#391945 · Checklist Designer – Finish & polish', tags: [], state: 'closed', sp: '8' },
+      { desc: '#391320 · Centralize version management across all repository projects', tags: [], state: 'closed', sp: '4' },
     ],
   },
 ];
 
 const TAKEAWAYS = [
-  'REPLACE: key takeaway #1 — what surprised us, what changed, what we learned',
-  'REPLACE: key takeaway #2',
-  'REPLACE: key takeaway #3',
-  'REPLACE: key takeaway #4',
-  'REPLACE: key takeaway #5',
+  'Token usage hit the monthly ceiling — Copilot budget exhausted in under 3 days. New team record.',
+  'Copilot pricing changes on 1 June — time to review AI tooling costs and per-seat allocation before the bill arrives.',
+  'AI accelerates, but doesn\'t replace — the hardest blockers this sprint were unblocked through human conversation, not prompts.',
+  'Burning tokens ≠ burning time — rapid AI-assisted delivery still needs human judgement at every decision point.',
 ];
 
 const SP_SUMMARY = {
-  previousCapacity: 0, // REPLACE: prior sprint capacity baseline in SP
-  delivered: 0, // REPLACE: SP delivered this sprint
-  growthPct: 0, // REPLACE: percent of capacity delivered (e.g. 358)
-  note: 'REPLACE: short note about totals, active items, bugs closed',
+  previousCapacity: 20,
+  delivered: 37,
+  growthPct: 185,
+  note: '37 SP across 11 items · 3 bugs fixed · 1 architecture spike in review · 185% of capacity delivered',
 };
 
 // ---------- Components ----------
@@ -220,14 +218,14 @@ export function Demo() {
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-7xl px-8">
           <div className="mb-14 max-w-2xl">
-            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
+            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-black/60">
               01 · Delivered
             </div>
-            <h2 className="text-4xl font-semibold leading-tight md:text-5xl">
-              REPLACE: section heading — e.g. "What we shipped"
+            <h2 className="text-4xl font-semibold leading-tight text-black md:text-5xl">
+              What we shipped
             </h2>
-            <p className="mt-4 text-white/70">
-              REPLACE: optional deck/intro sentence for this section.
+            <p className="mt-4 text-black/70">
+              11 user stories across 4 tracks — mobile privacy compliance, platform identity, schedule engine reliability, and tooling. 185% of capacity delivered.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -242,10 +240,10 @@ export function Demo() {
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-5xl px-8">
           <div className="mb-14 text-center">
-            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
+            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-black/60">
               02 · Learned
             </div>
-            <h2 className="text-4xl font-semibold md:text-5xl">Key takeaways</h2>
+            <h2 className="text-4xl font-semibold text-black md:text-5xl">Key takeaways</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {TAKEAWAYS.map((t, i) => (
@@ -264,10 +262,10 @@ export function Demo() {
       <section className="relative flex min-h-screen items-center py-24">
         <div className="mx-auto w-full max-w-4xl px-8">
           <div className="mb-12 text-center">
-            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-white/60">
+            <div className="mb-3 text-[0.65rem] uppercase tracking-[0.5em] text-black/60">
               03 · Numbers
             </div>
-            <h2 className="text-4xl font-semibold md:text-5xl">By the numbers</h2>
+            <h2 className="text-4xl font-semibold text-black md:text-5xl">By the numbers</h2>
           </div>
 
           <div className="glass rounded-2xl p-8 md:p-10">
@@ -342,10 +340,7 @@ export function Demo() {
             End of demo
           </div>
           <h2 className="mb-6 text-5xl font-bold md:text-7xl">Thank you</h2>
-          <p className="mx-auto mb-10 max-w-lg text-lg text-white/70">
-            REPLACE: closing line — Q&amp;A invitation, thanks to the team, next sprint teaser, or
-            contact info.
-          </p>
+          <div className="mb-10" />
           <button
             onClick={scrollToTop}
             className="glass-strong rounded-full px-8 py-4 text-xs font-semibold uppercase tracking-[0.3em] transition hover:bg-white/20"
